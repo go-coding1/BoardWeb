@@ -26,7 +26,6 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public void updateBoard(Board board) {
-		// TODO Auto-generated method stub
 		Board findBoard = boardRepo.findById(board.getSeq()).get();
 		
 		findBoard.setTitle(board.getTitle());
